@@ -1,4 +1,12 @@
 with source as (
-    select * from {{ source('northwood', 'products') }}
+    select 
+    cast(supplier_ids as integer) as supplier_id,
+    * 
+    except (supplier_ids)
+    from {{ source('northwood', 'products') }}
+    where supplier_ids not like "%;%"
 ) 
-select * from source
+select *,
+current_timestamp() as ingestion_timestamp
+
+from source
