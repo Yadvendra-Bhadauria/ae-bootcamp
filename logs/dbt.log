@@ -2549,3 +2549,134 @@ select * from source
 Done. PASS=19 WARN=0 ERROR=0 SKIP=0 TOTAL=19
 2022-01-05 19:40:22.519538 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f23ee80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1f9d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1fd5b0>]}
 2022-01-05 19:40:22.519901 (MainThread): Flushing usage events
+2022-01-06 09:30:07.614603 (MainThread): Running with dbt=0.21.0
+2022-01-06 09:30:08.784468 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/yadvendra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=['staging.stg_customer'], selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-01-06 09:30:08.786677 (MainThread): Tracking: tracking
+2022-01-06 09:30:08.804674 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139b44f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139e2d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139e2ac0>]}
+2022-01-06 09:30:08.824636 (MainThread): Partial parsing not enabled
+2022-01-06 09:30:08.867868 (MainThread): Parsing macros/etc.sql
+2022-01-06 09:30:08.870635 (MainThread): Parsing macros/catalog.sql
+2022-01-06 09:30:08.878316 (MainThread): Parsing macros/adapters.sql
+2022-01-06 09:30:08.908652 (MainThread): Parsing macros/materializations/seed.sql
+2022-01-06 09:30:08.913431 (MainThread): Parsing macros/materializations/view.sql
+2022-01-06 09:30:08.916740 (MainThread): Parsing macros/materializations/table.sql
+2022-01-06 09:30:08.931401 (MainThread): Parsing macros/materializations/copy.sql
+2022-01-06 09:30:08.934790 (MainThread): Parsing macros/materializations/incremental.sql
+2022-01-06 09:30:08.953596 (MainThread): Parsing macros/materializations/snapshot.sql
+2022-01-06 09:30:08.955735 (MainThread): Parsing macros/core.sql
+2022-01-06 09:30:08.960953 (MainThread): Parsing macros/materializations/test.sql
+2022-01-06 09:30:08.969646 (MainThread): Parsing macros/materializations/helpers.sql
+2022-01-06 09:30:08.983865 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-01-06 09:30:08.985777 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-01-06 09:30:09.009188 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-01-06 09:30:09.051832 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-01-06 09:30:09.083302 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-01-06 09:30:09.085368 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-01-06 09:30:09.100012 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-01-06 09:30:09.126802 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-01-06 09:30:09.145499 (MainThread): Parsing macros/materializations/table/table.sql
+2022-01-06 09:30:09.154344 (MainThread): Parsing macros/materializations/view/view.sql
+2022-01-06 09:30:09.164633 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-01-06 09:30:09.169253 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-01-06 09:30:09.170980 (MainThread): Parsing macros/etc/query.sql
+2022-01-06 09:30:09.172208 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-01-06 09:30:09.174315 (MainThread): Parsing macros/etc/datetime.sql
+2022-01-06 09:30:09.185421 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-01-06 09:30:09.187431 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-01-06 09:30:09.190244 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-01-06 09:30:09.192210 (MainThread): Parsing macros/adapters/common.sql
+2022-01-06 09:30:09.261607 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-01-06 09:30:09.264363 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-01-06 09:30:09.265999 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-01-06 09:30:09.267749 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-01-06 09:30:09.542941 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_products".
+2022-01-06 09:30:09.554263 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.559573 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_orders_status".
+2022-01-06 09:30:09.564729 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.566677 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_invoices".
+2022-01-06 09:30:09.570148 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.571595 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_inventory_transaction_types".
+2022-01-06 09:30:09.575754 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.577867 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_inventory_transactions".
+2022-01-06 09:30:09.581730 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.583261 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_customer".
+2022-01-06 09:30:09.586962 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.588649 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_order_details".
+2022-01-06 09:30:09.593002 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.595636 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_suppliers".
+2022-01-06 09:30:09.600018 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.601765 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_orders".
+2022-01-06 09:30:09.605350 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.607265 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_orders_tax_status".
+2022-01-06 09:30:09.611645 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.613715 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_privileges".
+2022-01-06 09:30:09.616958 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.618272 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_purchase_order_details".
+2022-01-06 09:30:09.621970 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.623674 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_purchase_orders".
+2022-01-06 09:30:09.627771 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.630043 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_order_details_status".
+2022-01-06 09:30:09.633404 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.634840 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_shippers".
+2022-01-06 09:30:09.638132 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.639645 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_employee_privileges".
+2022-01-06 09:30:09.645722 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.647843 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_employees".
+2022-01-06 09:30:09.651822 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.653148 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_strings".
+2022-01-06 09:30:09.656757 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.658464 (MainThread): Acquiring new bigquery connection "model.ae_bootcamp.stg_purchase_order_status".
+2022-01-06 09:30:09.663649 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-06 09:30:09.724603 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79492668-8162-4ff8-bdd3-f47e9f3d9adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b8a400>]}
+2022-01-06 09:30:09.735437 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-01-06 09:30:09.736058 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79492668-8162-4ff8-bdd3-f47e9f3d9adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b8a4c0>]}
+2022-01-06 09:30:09.736387 (MainThread): Found 19 models, 0 tests, 0 snapshots, 0 analyses, 184 macros, 0 operations, 0 seed files, 19 sources, 0 exposures
+2022-01-06 09:30:09.738779 (MainThread): 
+2022-01-06 09:30:09.739318 (MainThread): Acquiring new bigquery connection "master".
+2022-01-06 09:30:09.740393 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_datatonic-analytics-sandbox".
+2022-01-06 09:30:09.740672 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-01-06 09:30:10.487337 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_datatonic-analytics-sandbox_dl_northwood_stg_northwind".
+2022-01-06 09:30:10.488062 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-01-06 09:30:10.488526 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2022-01-06 09:30:10.631450 (MainThread): 09:30:10 | Concurrency: 8 threads (target='dev')
+2022-01-06 09:30:10.631916 (MainThread): 09:30:10 | 
+2022-01-06 09:30:10.637479 (Thread-1): Began running node model.ae_bootcamp.stg_customer
+2022-01-06 09:30:10.638174 (Thread-1): 09:30:10 | 1 of 1 START table model dl_northwood_stg_northwind.stg_customer..... [RUN]
+2022-01-06 09:30:10.638855 (Thread-1): Acquiring new bigquery connection "model.ae_bootcamp.stg_customer".
+2022-01-06 09:30:10.639332 (Thread-1): Compiling model.ae_bootcamp.stg_customer
+2022-01-06 09:30:10.643878 (Thread-1): Writing injected SQL for node "model.ae_bootcamp.stg_customer"
+2022-01-06 09:30:10.644755 (Thread-1): finished collecting timing info
+2022-01-06 09:30:10.677137 (Thread-1): Opening a new connection, currently in state closed
+2022-01-06 09:30:10.677596 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2022-01-06 09:30:10.853075 (Thread-1): Writing runtime SQL for node "model.ae_bootcamp.stg_customer"
+2022-01-06 09:30:10.853645 (Thread-1): On model.ae_bootcamp.stg_customer: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "ae_bootcamp", "target_name": "dev", "node_id": "model.ae_bootcamp.stg_customer"} */
+
+
+  create or replace table `datatonic-analytics-sandbox`.`dl_northwood_stg_northwind`.`stg_customer`
+  
+  
+  OPTIONS()
+  as (
+    with source as (
+    select * from `datatonic-analytics-sandbox`.`dl_northwood`.`customer`
+) 
+select 
+    *, current_timestamp() as ingestion_timestamp
+ from source
+  );
+    
+2022-01-06 09:30:13.084124 (Thread-1): finished collecting timing info
+2022-01-06 09:30:13.084673 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79492668-8162-4ff8-bdd3-f47e9f3d9adc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b6ad00>]}
+2022-01-06 09:30:13.085220 (Thread-1): 09:30:13 | 1 of 1 OK created table model dl_northwood_stg_northwind.stg_customer [CREATE TABLE (31.0 rows, 3.9 KB processed) in 2.45s]
+2022-01-06 09:30:13.085433 (Thread-1): Finished running node model.ae_bootcamp.stg_customer
+2022-01-06 09:30:13.087017 (MainThread): Acquiring new bigquery connection "master".
+2022-01-06 09:30:13.087533 (MainThread): 09:30:13 | 
+2022-01-06 09:30:13.087762 (MainThread): 09:30:13 | Finished running 1 table model in 3.35s.
+2022-01-06 09:30:13.088013 (MainThread): Connection 'master' was properly closed.
+2022-01-06 09:30:13.088291 (MainThread): Connection 'model.ae_bootcamp.stg_customer' was properly closed.
+2022-01-06 09:30:13.096222 (MainThread): 
+2022-01-06 09:30:13.096455 (MainThread): Completed successfully
+2022-01-06 09:30:13.096623 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-01-06 09:30:13.097108 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bc6e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139e2d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bc2e50>]}
+2022-01-06 09:30:13.097569 (MainThread): Flushing usage events
